@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Odbicia miasta</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.lighterbox.0.0.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        $(function(){ // document ready
+            $(".lighterbox").lighterbox({ overlayColor : "white" });
+        });
+    </script>
+</head>
+<body>
+    <div class="nav-button">
+        <i class="fa fa-bars fa-2x" id="show-menu" onclick="showMenu()"></i>
+    </div>
+    <div class="nav-button">
+    <i class="fa fa-times fa-2x" id="hide-menu" onclick="hideMenu()"></i>
+    </div>
+	<div class="nav" id="nav">
+        <div id="logo">
+			<a href="index.html" id="title"><h1>Zuzanna Jacewicz</h1></a>
+            <a href="index.html" id="subtitle">Odbicia w fotografii ulicznej</a>
+        </div>
+      		<a href="index.html" id="home" class="btn">Strona główna</a>
+      		<a href="#" id="reflections" class="btn">Odbicia miasta</a>
+      		<a href="portrait.html" id="portrait" class="btn">Autoportrety</a>
+     		<a href="map.html" id="map" class="btn">Mapa</a>
+      		<a href="inspo.html" id="inspo" class="btn">Inspiracje</a>
+      		<a href="about.html" id="about" class="btn">O serwisie</a>
+      		<a href="contact.html" id="contact" class="btn">Kontakt</a>
+	</div>
+	
+	<div class="wrapper">
+	<div class="pagecontent">
+		<div class="titleWrapper">
+		<div class="title" id="title1">ODBICIA</div>
+		<div class="title" id="title2">MIASTA</div>
+		</div>
+		<div class="aux" id="aux"></div>
+		<div class="description" id="description">
+			<p>
+				Na początku był lęk. Chciałam zostać fotografką uliczną, ale bałam się podejść za blisko 
+i zostać zauważoną przez ludzi, których fotografuję. Miałam przed oczami ciekawy kadr, 
+ale nie byłam w stanie podnieść aparatu. 
+</br></br>
+Wkrótce odkryłam, że to, co dzieje się na ulicy, widoczne jest też w witrynach sklepów 
+i restauracji – w formie odbicia. Początkowo szukanie i uwiecznianie odbić było więc dla mnie łatwiejszą alternatywą dla tradycyjnej fotografii ulicznej. Szybko stało się jednak moim ulubionym sposobem obserwowania i fotografowania rzeczywistości.
+</br></br>
+Dzięki różnym ulicznym odbiciom powstają warstwy, które później uwieczniam. Sklepowa wystawa miesza się z zatłoczoną ulicą, a wnętrze przybrzeżnej kawiarni – z oceanem. Przechodzący mężczyzna pojawia się w kadrze trzy razy dzięki odpowiednio ustawionym szybom i padającemu na nie światłu. Manekin prezentujący najnowszą kolekcję spogląda
+na spieszącą się do pracy kobietę, a miasto zyskuje nową teksturę w postaci naklejonych
+na szkło kropek. 
+</br></br>
+Fotografuję rzeczywistość, która dzięki odbiciom staje się znacznie ciekawsza i piękniejsza, 
+niż mogłaby się wydawać.
+</br></br>
+			</p>
+		</div>
+	<div class="theRest">
+	 <!-- Trigger/Open The Modal
+<button id="myBtn">Open Modal</button>
+
+ The Modal
+<div id="myModal" class="modal">
+
+ Modal content 
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div> -->
+
+<section class="photo">
+        <a href="img/city-01.jpg" class="lighterbox">
+            <img src="img/city-01.jpg" />
+            <h2 class="lighterbox-title">Budapeszt, 2019</h2>
+            <span class="lighterbox-desc"></span>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-02.jpg" class="lighterbox">
+            <img src="img/city-02.jpg" />
+            <h2 class="lighterbox-title">Kraków, 2017</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-03.jpg" class="lighterbox">
+            <img src="img/city-03.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-04.jpg" class="lighterbox">
+            <img src="img/city-04.jpg" />
+            <h2 class="lighterbox-title">Budapeszt, 2019</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-05.jpg" class="lighterbox">
+            <img src="img/city-05.jpg" />
+            <h2 class="lighterbox-title">Kraków, 2017</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-06.jpg" class="lighterbox">
+            <img src="img/city-06.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-07.jpg" class="lighterbox">
+            <img src="img/city-07.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-08.jpg" class="lighterbox">
+            <img src="img/city-08.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-09.jpg" class="lighterbox">
+            <img src="img/city-09.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-10.jpg" class="lighterbox">
+            <img src="img/city-10.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-11.jpg" class="lighterbox">
+            <img src="img/city-11.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-12.jpg" class="lighterbox">
+            <img src="img/city-12.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-13.jpg" class="lighterbox">
+            <img src="img/city-13.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-14.jpg" class="lighterbox">
+            <img src="img/city-14.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-15.jpg" class="lighterbox">
+            <img src="img/city-15.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-16.jpg" class="lighterbox">
+            <img src="img/city-16.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-17.jpg" class="lighterbox">
+            <img src="img/city-17.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-18.jpg" class="lighterbox">
+            <img src="img/city-18.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-19.jpg" class="lighterbox">
+            <img src="img/city-19.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-20.jpg" class="lighterbox">
+            <img src="img/city-20.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-21.jpg" class="lighterbox">
+            <img src="img/city-21.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-22.jpg" class="lighterbox">
+            <img src="img/city-22.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-23.jpg" class="lighterbox">
+            <img src="img/city-23.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-24.jpg" class="lighterbox">
+            <img src="img/city-24.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-25.jpg" class="lighterbox">
+            <img src="img/city-25.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-26.jpg" class="lighterbox">
+            <img src="img/city-26.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-27.jpg" class="lighterbox">
+            <img src="img/city-27.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-28.jpg" class="lighterbox">
+            <img src="img/city-28.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-29.jpg" class="lighterbox">
+            <img src="img/city-29.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-30.jpg" class="lighterbox">
+            <img src="img/city-30.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-31.jpg" class="lighterbox">
+            <img src="img/city-31.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-32.jpg" class="lighterbox">
+            <img src="img/city-32.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-33.jpg" class="lighterbox">
+            <img src="img/city-33.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-34.jpg" class="lighterbox">
+            <img src="img/city-34.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-35.jpg" class="lighterbox">
+            <img src="img/city-35.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-36.jpg" class="lighterbox">
+            <img src="img/city-36.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-37.jpg" class="lighterbox">
+            <img src="img/city-37.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-38.jpg" class="lighterbox">
+            <img src="img/city-38.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-39.jpg" class="lighterbox">
+            <img src="img/city-39.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-40.jpg" class="lighterbox">
+            <img src="img/city-40.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-41.jpg" class="lighterbox">
+            <img src="img/city-41.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-42.jpg" class="lighterbox">
+            <img src="img/city-42.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-43.jpg" class="lighterbox">
+            <img src="img/city-43.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-44.jpg" class="lighterbox">
+            <img src="img/city-44.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-45.jpg" class="lighterbox">
+            <img src="img/city-45.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-46.jpg" class="lighterbox">
+            <img src="img/city-46.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-47.jpg" class="lighterbox">
+            <img src="img/city-47.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+    <section class="photo">
+        <a href="img/city-48.jpg" class="lighterbox">
+            <img src="img/city-48.jpg" />
+            <h2 class="lighterbox-title">Nottingham, 2018</h2>
+        </a>
+    </section>
+</div> 
+	</div>
+
+	</div>
+    
+</div>
+<button onclick="goBack()" id="goback" title="Wróć na górę">^</button> 
+</body>
+</html>

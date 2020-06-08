@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inspiracje</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.lighterbox.0.0.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        $(function(){ // document ready
+            $(".lighterbox").lighterbox({ overlayColor : "white" });
+        });
+    </script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+	<div class="nav-button">
+        <i class="fa fa-bars fa-2x" id="show-menu" onclick="showMenu()"></i>
+    </div>
+    <div class="nav-button">
+    <i class="fa fa-times fa-2x" id="hide-menu" onclick="hideMenu()"></i>
+    </div>
+	<div class="nav" id="nav">
+		<div id="logo">
+			<a href="index.html" id="title"><h1>Zuzanna Jacewicz</h1></a>
+            <a href="index.html" id="subtitle">Odbicia w fotografii ulicznej</a>
+        </div>
+      		<a href="index.html" id="home" class="btn">Strona główna</a>
+      		<a href="city.html" id="reflections" class="btn">Odbicia miasta</a>
+      		<a href="portrait.html" id="portrait" class="btn">Autoportrety</a>
+     		<a href="map.html" id="map" class="btn">Mapa</a>
+      		<a href="inspo.html" id="inspo" class="btn">Inspiracje</a>
+      		<a href="about.html" id="about" class="btn">O serwisie</a>
+      		<a href="contact.html" id="contact" class="btn">Kontakt</a>
+	</div>
+	
+	<div class="wrapper">
+	<div class="pagecontent">
+		<div class="titleWrapper">
+			<div class="title" id="title1Inspo">INSPIRACJE</div>
+		</div>
+		<div class="aux" id="aux">
+		</div>
+		<div class="description" id="descriptionInspo">
+			<div class="pictureWrapper">
+				<a href="#friedlander"><div class="pictures">
+					<img class="photo1" src="img/friedlander-01.jpg" onmouseover="showCaption1()" onmouseout="hideCaption1()" />
+					<div class="captions" id="caption1">Lee Friedlander</div>
+				</div></a>
+				<a href="#maier"><div class="pictures">
+					<img class="photo1" src="img/maier-02.jpg" onmouseover="showCaption2()" onmouseout="hideCaption2()"/>
+					<div id="caption2">Vivian Maier</div>
+				</div></a>
+				<a href="#corney"><div class="pictures">
+					<img class="photo1" src="img/corney-01.jpg" onmouseover="showCaption3()" onmouseout="hideCaption3()"/>
+					<div id="caption3">Belinda Corney</div>
+				</div></a>
+				<a href="#higbee"><div class="pictures">
+					<img class="photo1" src="img/higbee-01.jpg" onmouseover="showCaption4()" onmouseout="hideCaption4()"/>
+					<div id="caption4">Jonathan Higbee</div>
+				</div></a>
+				</br></br>
+			</div>
+		</div>
+		<div class="theRest" id="theRestInspo">
+			<h2 id="friedlander">Lee Friedlander</h2>
+			<h2 id="maier">Vivian Maier</h2>
+			<h2 id="corney">Belinda Corney</h2>
+			<h2 id="higbee">Jonathan Higbee</h2>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

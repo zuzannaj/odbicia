@@ -1,0 +1,183 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	/*background-color: #F5F8EB;*/
+	background-image: url("../img/city-32.jpg");
+	background-position: center;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+	margin:0;
+	padding:0;
+	color: black;
+}
+
+h1 {
+	font-family: 'Lobster Two', cursive;
+	font-size: 40px;
+	margin: 0px;
+}
+
+h2 {
+	margin: 0px;
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 22px;
+}
+
+#logo {
+	grid-area: logo;
+	background-color: #937e66;
+	display: grid;
+	align-content: center;
+	font-family: 'Lato', sans-serif;
+}
+
+#city {
+	grid-area: city;
+	background-color: rgb(96,102,100,0.4);
+}
+
+#portrait {
+	grid-area: portrait;
+	background-color: rgb(83,71,59,0.4);
+}
+
+#inspo {
+	grid-area: inspo;
+	background-color: rgb(83,71,59,0.4);
+}
+
+#map {
+	grid-area: map;
+	background-color: rgb(97,32,28,0.4);
+}
+
+#about {
+	grid-area: about;
+	background-color: rgb(96,102,100,0.4);
+}
+
+#contact {
+	grid-area: contact;
+	background-color: rgb(97,32,28,0.4);
+}
+
+#logo:hover {
+	grid-area: logo;
+}
+
+#city:hover {
+	grid-area: city;
+	background-color: rgb(96,102,100,0.8);
+}
+
+#portrait:hover {
+	grid-area: portrait;
+	background-color: rgb(89,81,70,0.8);
+}
+
+#inspo:hover {
+	grid-area: inspo;
+	background-color: rgb(89,81,70,0.8);
+}
+
+#map:hover {
+	grid-area: map;
+	background-color: rgb(97,32,28,0.8);
+}
+
+#about:hover {
+	grid-area: about;
+	background-color: rgb(96,102,100,0.8);
+}
+
+#contact:hover {
+	grid-area: contact;
+	background-color: rgb(97,32,28,0.8);
+}
+
+.nav {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+/*
+.nav:hover {
+	background-color: rgba(169,140,106,1.0);
+}*/
+
+.container {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	" . . . . . . . . . . . . . . . . . ."
+	". . . . . . . portrait portrait portrait portrait portrait . . . . . ."
+	". city city city city city . portrait portrait portrait portrait portrait . map map map map ."
+	". city city city city city . portrait portrait portrait portrait portrait . map map map map ."
+	". city city city city city . portrait portrait portrait portrait portrait . map map map map ."
+	". . . . . . . . . . . . . map map map map ."
+	". . . . . . logo logo logo logo logo logo . map map map map ."
+	". about about about about . logo logo logo logo logo logo . map map map map ."
+	". about about about about . logo logo logo logo logo logo . map map map map ."
+	". about about about about . . . . . . . . . . . . ."
+	". about about about about . inspo inspo inspo inspo inspo . . . . . . ."
+	". about about about about . inspo inspo inspo inspo inspo . contact contact contact contact contact ."
+	". about about about about . inspo inspo inspo inspo inspo . contact contact contact contact contact ."
+	". about about about about . . . . . . . contact contact contact contact contact ."
+	". about about about about . . . . . . . contact contact contact contact contact ."
+	" . . . . . . . . . . . . . . . . . .";
+}
+
+.nav, .logo {
+	text-align: center;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	* {
+		width: 100%;
+	}
+
+	.container {
+		grid-template-columns: 5% 90% 5%;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 
+		"logo logo logo"
+		". city ."
+		". portrait ."
+		". map ."
+		". inspo ."
+		". about ."
+		". contact .";
+		grid-row-gap: 10px;
+		padding-bottom: 10px;
+		justify-content: center;
+	}
+
+	#city, #portrait, #map, #inspo, #about, #contact {
+		background-color: rgb(155,123,115,0.8);
+	}
+
+	#contact {
+		padding-bottom: 10px;
+	}
+
+	#city:hover, #portrait:hover, #map:hover, #inspo:hover, #about:hover, #contact:hover {
+		/*background-color: rgb(89,81,70,0.9); */
+		background-color: rgb(155,123,115,0.95);
+	}
+
+	#logo {
+		padding-bottom: 10px;
+		background-color: #A98C6A;
+	}
+}
